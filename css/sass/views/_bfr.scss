@@ -1,0 +1,412 @@
+.masthead {
+  background: $bfr-green url('../img/supply-tile.png') -20px -20px repeat;
+  background-size: 50%;
+  padding: 20px 0;
+  text-align: center;
+  
+  hgroup {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+  }
+  
+  h2, h3, h5 {
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  }
+  
+  .powered-by {
+    background: rgba(13,101,81, 0.7);
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 0.875em;
+    @include border-radius(30px);
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    
+    a {
+      color: $bfr-green;
+      @include transition(all .3s ease-in-out);
+    }
+    
+    a:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+    
+  }
+  
+}
+
+.content {
+  padding-top: 20px;
+}
+
+.resource-section-nav {
+  text-align: center;
+  margin-bottom: 25px;
+  
+  li {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  li > a {
+    color: #888;
+    padding-left: 0px;
+    font-weight: bold;
+  }
+  
+  li > a:hover, li > a:active, li > a:focus, li.active > a:hover, li.active > a:active, li.active > a:focus {
+    background: none;
+    color: $bfr-purple;
+  }
+  
+  li.active > a {
+    background: none;
+    color: $bfr-purple;
+  }
+  
+  li.active > a:hover, li.active > a:active, li.active > a:focus {
+    color: $bfr-purple;
+  }
+  
+} /* .resource-section-nav */
+
+.page-section {
+  padding: 0 0 20px 0;
+}
+
+.page-section-header {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto 20px;
+  text-align: center;
+  
+  .ps-title {
+    margin: 0 0 15px 0;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #eee;
+    text-transform: uppercase;
+    color: $bfr-purple;
+    font-size: 1.25em;
+    line-height: 1.4em;
+  }
+  
+  .ps-description {
+    color: #888;
+    margin: 0;
+  }
+  
+}
+
+.item {
+  text-align: center;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+  @include border-radius(3px);
+  @include transition(all .1s ease-in-out);
+    
+  a {
+    display: block;
+    padding: 20px;
+  }
+  
+  a h5 {
+    color: #333;
+    font-size: 1.25em;
+    margin: 0 0 10px 0;
+    @include transition(all .1s ease-in-out);
+  }
+  
+  a p {
+    color: #888;
+    margin: 0;
+  }
+  
+  a:hover {
+    text-decoration: none;
+    
+    h5 {
+      color: $bfr-green;
+    }
+    
+  }
+  
+  &:hover {
+    border: 1px solid $bfr-purple;
+  }
+
+  h5, p {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 auto;
+  }  
+}
+
+.host-block {
+  text-align: center;
+  
+  img {
+    display: inline-block;
+    max-width: 60%;
+    width: 100%;
+    height: auto;    
+  }
+  
+  p {
+    font-size: 1em;
+    color: #888;
+    margin: 20px 0;
+  }
+
+  .twitter-link {
+    background: $bfr-blue;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 20px;
+    @include border-radius(30px);
+    @include transition(all .3s ease-in-out);
+  }
+  
+  .twitter-link:hover {
+    background: darken($bfr-blue, 20%);
+    text-decoration: none;
+  }
+  
+}
+
+.footer {
+  padding: 20px 0;
+  background: #eee;
+  text-align: center;
+  
+  p {
+    color: #999;
+    line-height: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    max-width: 90%;
+    margin: 0 auto 25px;
+    padding-bottom: 15px;
+  }
+  
+  .sponsors {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .sponsors li {
+    
+    img {
+      margin: 0 auto;
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+    
+    &.proper {
+      margin-bottom: 25px;
+    }
+    
+    &.proper img {
+      max-width: 120px;
+      opacity: 0.6;
+    }
+
+    &.workshop img {
+      max-width: 220px;
+      opacity: 0.7;
+    }    
+    
+    .twitter {
+      border: 2px solid #ddd;
+      color: #555;
+      font-weight: bold;
+      display: block;
+      max-width: 320px;
+      margin: 15px auto 0;
+      padding: 5px 20px;
+      margin-top: 15px;
+      @include border-radius(30px);
+      @include transition(all .3s ease-in-out);
+      
+      &:hover {
+        text-decoration: none;
+        border: 2px solid #aaa;
+        color: #333;
+      }
+      
+    }
+
+  }
+  
+}
+
+.reminder {
+  background: #333;
+  text-align: center;
+  padding: 20px 0;
+  
+  p {
+    font-size: 0.875em;
+    margin: 0;
+    color: #ddd;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+}
+
+@media screen and (min-width: 768px) {
+  
+  .masthead {
+    background-size: auto;
+    background-position: -30px 30px;
+    padding: 50px 0;
+    
+    .powered-by {
+      font-size: 0.875em;
+      padding: 5px 20px;
+    }
+    
+  }
+
+  .content {
+    padding-top: 40px;
+  }
+
+  .resource-section-nav {
+    margin-bottom: 40px;
+  }
+
+  .page-section {
+    padding: 0 0 40px 0;
+  }
+  
+  .page-section-header {
+    margin-bottom: 40px;
+  }
+
+  .host-block {
+    text-align: center;
+    
+    p {
+      font-size: 1.25em;
+      margin: 20px 0 40px;
+    }
+    
+    .twitter-link {
+      background: $bfr-blue;
+      color: #fff;
+      font-weight: bold;
+      padding: 5px 20px;
+      @include border-radius(30px);
+      @include transition(all .3s ease-in-out);
+    }
+    
+    .twitter-link:hover {
+      background: darken($bfr-blue, 20%);
+      text-decoration: none;
+    }
+    
+  }
+
+  .footer {
+    padding: 40px 0;
+    
+    .sponsors {
+      display: inline-block;
+      margin-bottom: 0px;
+    }
+    
+    p {
+      max-width: 100%;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+    }
+    
+    .sponsors li {
+      float: left;
+      margin-right: 50px;
+      margin-bottom: 0px;
+      
+      &.workshop {
+        margin-right: 0px;
+      }
+      
+      &.proper {
+        margin-bottom: 0px;
+      }
+
+      &.proper img {
+        max-width: 150px;
+      }
+  
+      &.workshop img {
+        max-width: 260px;
+      }
+      
+      .twitter {
+        margin-top: 25px;
+      }       
+
+    }
+    
+    .workshop {
+      margin-right: 0px;
+      margin-top: 10px;
+    }
+    
+  }  
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .masthead {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 5;
+  }
+
+  .content {
+    padding-top: 60px;
+  }
+  
+  .resource-section-nav {
+    text-align: left;
+  }
+
+  .resource-section-nav.affix {
+    top: 60px;
+    width: 265px;
+    z-index: 5000;
+  }
+
+  .page-section {
+    padding: 0 0 60px 0;
+  }
+
+  .page-section-header {
+    margin-bottom: 60px;
+  }
+  
+  .item.last {
+    margin-bottom: 0px;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }  
+
+}

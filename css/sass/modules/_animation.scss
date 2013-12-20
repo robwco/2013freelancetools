@@ -1,0 +1,31 @@
+@-webkit-keyframes fade-in-slide-down {
+  0%   { top: -800px; opacity: 0; }
+  100% { top: 0; opacity: 1; }
+}
+
+@-moz-keyframes fade-in-slide-down {
+  0%   { top: -800px; opacity: 0; }
+  100% { top: 0; opacity: 1; }
+}
+
+@-o-keyframes fade-in-slide-down {
+  0%   { top: -800px; opacity: 0; }
+  100% { top: 0; opacity: 1; }
+}
+
+@keyframes fade-in-slide-down {
+  0%   { top: -800px; opacity: 0; }
+  100% { top: 0; opacity: 1; }
+}
+
+.fade-in-slide-down {
+  -webkit-animation: fade-in-slide-down 1s 1; /* Safari 4+ */
+  -moz-animation:    fade-in-slide-down 1s 1; /* Fx 5+ */
+  -o-animation:      fade-in-slide-down 1s 1; /* Opera 12+ */
+  animation:         fade-in-slide-down 1s 1; /* IE 10+ */
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
