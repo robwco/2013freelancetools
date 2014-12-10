@@ -1,0 +1,50 @@
+.btn {
+  -webkit-font-smoothing: antialiased;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-transform: uppercase;
+
+  &.green {
+    background: $bfr-green;
+    color: darken($bfr-green, 30%);
+  }
+  
+  &.blue {
+    background: $bfr-blue;
+    color: #fff;
+  }
+  
+  &:hover {
+    cursor: pointer;
+    outline: 0;
+  }
+  
+  &:active {
+    position: relative;
+    top: 1px;
+    @include box-shadow(0 0 0 transparent);    
+    outline: 0;
+  }
+  
+  &:focus {
+    outline: 0;
+  }
+    
+} /* .btn */
+
+.btn-list {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-list li {
+  float: left;
+  margin-right: 15px;
+}
+
+.btn-list li:last-child {
+  margin-right: 0px;
+}
